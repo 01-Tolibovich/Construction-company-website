@@ -1,0 +1,15 @@
+.mouse-to-down {
+    animation: MoveUpDown 1s linear infinite;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+      -webkit-transform: translateY(-20px);
+      -moz-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      -o-transform: translateY(-20px);
+}
+  }
