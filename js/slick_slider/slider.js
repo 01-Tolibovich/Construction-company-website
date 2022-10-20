@@ -1,4 +1,4 @@
-$('.services_img').slick({
+jquery('.services_img').slick({
     dots: true,
     arrows: false,
     infinite: true,
