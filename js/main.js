@@ -1,8 +1,8 @@
 // Бургер меню
-const hamb = document.querySelector("#hamb");
-const menu = document.querySelector(".menu");
-const lists = document.querySelector(".lists");
-const body = document.body;
+let hamb = document.querySelector("#hamb");
+let menu = document.querySelector(".menu");
+let lists = document.querySelector(".lists");
+let body = document.body;
 
 hamb.addEventListener("click", hambHandler);
 function hambHandler(e) {
