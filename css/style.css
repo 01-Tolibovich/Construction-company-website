@@ -804,7 +804,8 @@ section {
 .company {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
+  grid-column-gap: 1em;
+    grid-row-gap: 2em;
 }
 
 .company h2 {
@@ -821,6 +822,7 @@ section {
 
 .company p {
   color: #777777;
+  word-break: break-all;
 }
 
 .company > img {
@@ -886,6 +888,23 @@ section {
   grid-row-start: 6;
   grid-row-end: 7;
   text-align: center;
+}
+.number_anim {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.number_anim h3 {
+  margin: 0;
+}
+
+.number_anim p {
+  margin: 0;
+  color: #ffffff;
 }
 
 .projects {

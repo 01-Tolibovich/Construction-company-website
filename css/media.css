@@ -196,6 +196,9 @@
         grid-row-end: 6;
         text-align: center;
     }
+    .company p {
+        word-break: normal;
+    }
     .projects {
         grid-gap: 3em;
     }
