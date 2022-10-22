@@ -25,7 +25,7 @@ function closeOnClick() {
 }
 
 
-
+// Анимация увеличение цифр
 var time = 2,
   cc = 1;
 $(window).scroll(function() {
@@ -56,3 +56,5 @@ $(window).scroll(function() {
     }
   });
 });
+
+// Функция кнопки для прокрутки вниз
