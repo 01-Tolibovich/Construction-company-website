@@ -92,12 +92,12 @@ header > img {
     font-weight: 400;
     line-height: 1.2em;
     text-align: center;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
     color: #ffffff;
 }
 
 header p {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     text-align: center;
     font-weight: 200;
 }
@@ -550,8 +550,7 @@ body.noscroll {
 section {
   /* padding: 4em 1em; */
   padding: 3em 2em 3em 3em;
-    margin-right: 1em;
-    border-right: 1px solid #444444;
+  border-right: 1px solid #444444;
 }
 
 .licenses {
@@ -646,14 +645,14 @@ section {
 
 .services {
   display: grid;
-  grid-template-columns: 10% 85%;
-  grid-gap: 5%;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
   grid-template-rows: auto;
   z-index: 11;
   overflow: hidden;
 }
 
-.services .item-1 {
+/* .services .item-1 {
   position: relative;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -667,10 +666,10 @@ section {
   height: 2%;
   align-self: center;
   justify-self: self-start;
-}
+} */
 
 .services .item-2 {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -678,7 +677,7 @@ section {
 
 
 .services .item-3 {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -688,14 +687,20 @@ section {
 }
 
 .services .item-4 {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
+.services .item-5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100vw;
+}
+
 .services .item-6 {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
@@ -717,7 +722,6 @@ section {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 3em -1em 3em -1em;
   padding: 3em;
 }
 
@@ -816,12 +820,12 @@ section {
   position: relative;
 }
 
-.projects .item-1 {
+.projects {
+  font-size: 50% !important;
+}
+
+/* .projects .item-1 {
   position: absolute;
-  /* grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 18; */
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -832,7 +836,7 @@ section {
   justify-self: self-start;
   white-space: nowrap;
   left: -1em;
-}
+} */
 
 .projects .item-2 {
   grid-column-start: 1;
@@ -942,7 +946,7 @@ section {
 
 .projects .item-16 {
   grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 13;
   grid-row-end: 15;
 }
